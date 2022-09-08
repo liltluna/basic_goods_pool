@@ -1,21 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Login</title>
+    <link type="text/css" href="register.css" rel="stylesheet" />
+
+</head>
 
 <body>
-	<h1> test 123 ---->shopping</h1>
-	<form method="POST" action="Login.do">
-		username:
-		<input type='text' name="username">
-		password:
-		<input type="password" name="password">
-		<input type="SUBMIT">
-	</form>
+<!--注册表部分-->
+<div class="login-box">
+  <h2>Login</h2>
+  <form method="POST" action="Register.do">
+    <div class="user-box">
+      <input type="text" name="" required="">
+      <label>Username</label>
+    </div>
+    <div class="user-box">
+      <input type="password" name="" required="">
+      <label>Password</label>
+    </div>
 
-	<form method="GET" action="Register.do">				
-		<input type="SUBMIT" value="Register">
-	</form>
+    <button onclick="submit()">
+      <span></span> <!--用于修饰动画-->
+      <span></span>
+      <span></span>
+      <span></span>
+      Submit
+    </button>
+
+    <button id="toRegister">
+      <span></span> <!--用于修饰动画-->
+      <span></span>
+      <span></span>
+      <span></span>
+      <a href="./register.html">Register</a>
+    </button>
+  </form>
+
+</div>
+<script src="register.js"></script> <!--导入提交按钮点击事件的函数-->
 </body>
-
 </html>
-
-<!-- 注意：method、action、name三个值不能变 -->

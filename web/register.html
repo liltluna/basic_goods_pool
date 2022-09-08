@@ -1,17 +1,50 @@
-<html>
-<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Register</title>
+    <link type="text/css" href="register.css" rel="stylesheet" />
 
-<form method="POST" action="Register.do">
-	username:
-	<input type='text' name="username">
-	<br>
-	password:
-	<input type="password" name="password">
-	<br>
-	confirm password:
-	<input type="text" name="password_confirm">
-	<br>
-	<input type="SUBMIT">
-</form>
+</head>
+
+<body>
+<!--注册表部分-->
+<div class="login-box">
+  <h2>Register</h2>
+  <form method="POST" action="Register.do">
+    <div class="user-box">
+      <input type="text" name="username" required="">
+      <label>Username</label>
+    </div>
+    <div class="user-box">
+      <input type="password" name="password" required="">
+      <label>Password</label>
+    </div>
+
+    <div class="user-box">
+      <input type="password" name="" required="">
+      <label>Confirm Password</label>
+    </div>
+
+    <button onclick="submit()">
+      <span></span> <!--用于修饰动画-->
+      <span></span>
+      <span></span>
+      <span></span>
+      Submit
+    </button>
+
+    <button id="toLogin">
+      <span></span> <!--用于修饰动画-->
+      <span></span>
+      <span></span>
+      <span></span>
+      <a href="./Login.html">Login</a>
+    </button>
+
+  </form>
+
+</div>
+<script src="register.js"></script> <!--导入提交按钮点击事件的函数-->
 </body>
 </html>
