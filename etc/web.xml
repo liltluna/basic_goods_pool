@@ -1,0 +1,58 @@
+<web-app 
+	xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+	version="2.4">
+
+	<servlet>
+		<servlet-name>GLogin</servlet-name>
+		<servlet-class>com.example.web.GLogin</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>GRegister</servlet-name>
+		<servlet-class>com.example.web.GRegister</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>GShop</servlet-name>
+		<servlet-class>com.example.web.GShop</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>GCheck out</servlet-name>
+		<servlet-class>com.example.web.GCheck</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GLogin</servlet-name>
+		<url-pattern>/Login.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>GShop</servlet-name>
+		<url-pattern>/Shop.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>GRegister</servlet-name>
+		<url-pattern>/Register.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>GCheck out</servlet-name>
+		<url-pattern>/Check.do</url-pattern>
+	</servlet-mapping>
+
+	<listener>
+		<listener-class>
+			com.example.DBListener
+		</listener-class>
+	</listener>
+
+	<context-param>
+		<param-name>DB_IP</param-name>
+		<param-value>127.0.0.1</param-value>
+	</context-param>
+
+</web-app>

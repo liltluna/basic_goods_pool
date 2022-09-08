@@ -1,0 +1,2 @@
+javac -d classes src\com\example\model\*.java
+javac -d classes -classpath lib\servlet-api.jar;classes;. src\com\example\web\*.java
