@@ -112,6 +112,15 @@
    2. 运用所学的前端知识丰满相关的JSP、HTML页面
    3. 添加页面重定向动态效果
 
+# 7.另一种文件目录框架
+dao层（直接与数据库对接，处理数据库的增删改查等操作），service层（提供相应的业务，如添加用户，修改用户信息等。调用dao层，并为servlet层提供接口），servlet层（与前端对接，处理请求和发出响应）
+
+- 1.逻辑框架图
+  ![image](https://user-images.githubusercontent.com/86513588/189508437-78f490e8-d9d3-47de-b3c9-7cf8f70e1339.png)
+- 2.文件目录图
+
+  <img width="165" alt="image" src="https://user-images.githubusercontent.com/86513588/189508441-98989e6f-a1de-4911-a5a9-154d256ddd92.png">
+
 
 # 备注
 1. Listener的部分解释
